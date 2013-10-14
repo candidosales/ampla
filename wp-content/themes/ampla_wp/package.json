@@ -1,0 +1,20 @@
+{
+  "name": "ampla",
+  "version": "1.0.0",
+  "description": "Site da Ampla Construcao",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-less": "~0.7.0",
+    "grunt-contrib-cssmin": "~0.6.2",
+    "matchdep": "~0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Wings",
+  "license": "BSD"
+}

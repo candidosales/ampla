@@ -1,0 +1,19 @@
+/*
+
+ADMIN
+
+*/
+.inside table td{
+	margin: 0 10px;
+}
+.inside table tr{
+	border-bottom: 1px solid #CCC;
+	padding: 20px 0px;
+	width: 100%;
+	clear: both;
+	float: left;
+}
+
+.inside table tr td:first-child{
+	width: 100px;
+}
