@@ -5,8 +5,17 @@
 
   <section class="row full-width ajusta-height pattern noticias minheight scroll-bar">
     <div class="large-12 large-centered columns revista-ampla shadow">
-        <span aria-hidden="true" class="icon-newspaper"></span>
-        <span class="roboto-slab">Revista <img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></span>
+      <div class="row">
+        <div class="large-5 columns">
+            <span aria-hidden="true" class="icon-newspaper"></span>
+            <span class="roboto-slab">Revista <img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></span>
+        </div>
+        <div class="large-7 columns">
+          <?php get_search_form();?>
+        </div>
+      </div>
+        
+
         <hr class="margem">
         <div class="large-block-grid-4">
           <?php 
