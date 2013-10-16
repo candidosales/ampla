@@ -1,4 +1,4 @@
-/*! ampla - v1.0.0 - 2013-10-11
+/*! ampla - v1.0.0 - 2013-10-16
 * Copyright (c) 2013 ; Licensed  */
 /*! jQuery v1.10.1 | (c) 2005, 2013 jQuery Foundation, Inc. | jquery.org/license
 //@ sourceMappingURL=jquery-1.10.1.min.map

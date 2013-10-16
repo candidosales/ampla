@@ -5,7 +5,7 @@
 
   <section class="row full-width ajusta-height pattern minheight scroll-bar">
     <div class="row collapse lista-ofertas">
-      <a href="<?php bloginfo('url')?>/produtos" class="voltar"><span aria-hidden="true" class="icon-reply"></span></a>
+      <a href="<?php bloginfo('url')?>/produtos" class="voltar show-for-medium-up"><span aria-hidden="true" class="icon-reply"></span></a>
       <div class="large-11 large-centered columns detalha-produto">
               <?php 
               if (have_posts()){ 
@@ -26,7 +26,7 @@
               </div>
               
               <div class="large-3 columns detalha-produto-share text-center">
-                <ul class="small-block-grid-1">
+                <ul class="small-block-grid-3 large-block-grid-1">
                   <h6>Indique</h6>
                   <li> <a href="http://twitter.com/home?status=Produto Ampla: <?php the_title(); ?>: <?php the_permalink(); ?>" title="Clique para enviar essa página para o twitter" target="_blank">
                           <img src="<?php bloginfo('template_url'); ?>/img/twitter.png" alt="">
