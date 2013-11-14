@@ -16,7 +16,7 @@
             ?>
       <li>
          <?php if ( has_post_thumbnail() ) { 
-                  the_post_thumbnail('vendedor-produto-thumb'); 
+                  the_post_thumbnail('vendedor-thumb-2'); 
                 } ?>
         <div class="yellow-white large-12 columns text-left">
           <h4 class="nome"><?php the_title(); ?></h4>

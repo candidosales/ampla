@@ -17,11 +17,12 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/img/favicon.png"/>
-  <!--<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/ampla.min.css">-->
-
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/ampla.min.css">
+<!--
   <link rel="stylesheet/less" href="<?php bloginfo('template_url'); ?>/assets/css/style.less">
 
   <script src="<?php bloginfo('template_url'); ?>/assets/js/less-1.5.0.min.js"></script>
+-->
 
  <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" />
  <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" />

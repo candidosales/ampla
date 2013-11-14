@@ -66,19 +66,19 @@
             <table class="text-left">
               <tbody>
                 <tr>
-                  <th>Embalagem</th>
+                  <th><strong>Embalagem:</strong></th>
                   <td><?php echo get_post_meta(get_the_ID(), 'embalagem', true) ?></td>
                 </tr>
                 <tr>
-                  <th>Características</th>
+                  <th><strong>Características:</strong></th>
                   <td><?php echo get_post_meta(get_the_ID(), 'caracteristica', true) ?></td>
                 </tr>
                 <tr>
-                  <th>Benefícios</th>
+                  <th><strong>Benefícios:</strong></th>
                   <td><?php echo get_post_meta(get_the_ID(), 'beneficio', true) ?></td>
                 </tr>
                 <tr>
-                  <th>Aplicação</th>
+                  <th><strong>Aplicação:</strong></th>
                   <td><?php echo get_post_meta(get_the_ID(), 'aplicacao', true) ?></td>
                 </tr>
               </tbody>

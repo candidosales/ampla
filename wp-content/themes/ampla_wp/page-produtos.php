@@ -24,7 +24,7 @@
         ?>
         
         <a  class="left text-center" data-filter=".<?php  echo $categories[$i]->slug; ?>">
-          <img src="<?php bloginfo('template_url'); ?>/assets/img/cat_img/<?php  echo $categories[$i]->slug; ?>.png" alt="">
+          <img src="<?php bloginfo('template_url'); ?>/img/cat_img/<?php  echo $categories[$i]->slug; ?>.png" alt="">
           <span class="nome"><?php  echo $categories[$i]->name; ?></span>
         </a>
         

@@ -122,7 +122,7 @@ function add_custom_script() {
     wp_enqueue_script('bootstrap-wysihtml5-pt-BR');
    
 
-    wp_register_script('admin', get_template_directory_uri() . '/js/admin.js', array('jquery'), false, true);  
+    wp_register_script('admin', get_template_directory_uri() . '/js/vendor/admin.js', array('jquery'), false, true);  
     wp_enqueue_script('admin');  
 } // end add_custom_attachment_script  
 add_action('admin_enqueue_scripts', 'add_custom_script');
