@@ -8,7 +8,7 @@
                 'post_type' => 'filial'));
 
                 if($filial->have_posts()){ 
-
+                  $count = 1;
                   while($filial->have_posts()) { 
                     $filial->the_post(); 
                     $image = get_field('imagem_1');
@@ -16,11 +16,12 @@
             ?>
       <li class="bloco conheca-ampla" style="background: url(<?php echo $image['sizes']['large'] ?>);">
         <a href="<?php the_permalink(); ?>">
-          <div class="fundo-transparente red"></div>
+          <div class="fundo-transparente red-<?php echo $count; ?>"></div>
           <div class="bola conheca-bola"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""><br><?php the_title(); ?></div>
         </a>
       </li>
   <?php
+    $count++;
    }
  } ?>
 

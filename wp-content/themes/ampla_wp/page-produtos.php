@@ -10,73 +10,28 @@
           <span aria-hidden="true" class="icon-grid"></span>
           <span class="nome">Ver todos</span>
         </a>
-        <a class="left text-center" data-filter=".cano">
-          <span aria-hidden="true" class="icon-noun_project_7403"></span>
-          <span class="nome">Cano</span>
+         <?php  
+
+          $args = array(
+          'orderby' => 'name',
+          'parent' => 0,
+          'taxonomy' => 'tipo_produto'
+          );
+          
+          $categories = get_categories( $args );
+          for ($i=0; $i < sizeof($categories); $i++) { 
+          
+        ?>
+        
+        <a  class="left text-center" data-filter=".<?php  echo $categories[$i]->slug; ?>">
+          <img src="<?php bloginfo('template_url'); ?>/assets/img/cat_img/<?php  echo $categories[$i]->slug; ?>.png" alt="">
+          <span class="nome"><?php  echo $categories[$i]->name; ?></span>
         </a>
-        <a class="left text-center" data-filter=".torneira">
-          <span aria-hidden="true" class="icon-noun_project_7230"></span>
-          <span class="nome">Torneira</span>
-        </a>
-        <a class="left text-center" data-filter=".tinta">
-          <span aria-hidden="true" class="icon-noun_project_6007"></span>
-          <span class="nome">Tinta</span>
-        </a>
-        <a class="left text-center">
-          <span aria-hidden="true" class="icon-noun_project_4679"></span>
-          <span class="nome">Tomada</span>
-        </a>
-        <a class="left text-center" data-filter=".chuveiro">
-          <span aria-hidden="true" class="icon-noun_project_1322"></span>
-          <span class="nome">Chuveiro</span>
-        </a>
-        <a class="left text-center">
-          <span aria-hidden="true" class="icon-noun_project_7403"></span>
-          <span class="nome">Cano</span>
-        </a>
-        <a class="left text-center">
-          <span aria-hidden="true" class="icon-noun_project_7230"></span>
-          <span class="nome">Torneira</span>
-        </a>
-        <a class="left text-center">
-          <span aria-hidden="true" class="icon-noun_project_6007"></span>
-          <span class="nome">Tinta</span>
-        </a>
-        <a class="left text-center">
-          <span aria-hidden="true" class="icon-noun_project_4679"></span>
-          <span class="nome">Tomada</span>
-        </a>
-        <a class="left text-center">
-          <span aria-hidden="true" class="icon-noun_project_1322"></span>
-          <span class="nome">Chuveiro</span>
-        </a>
-        <a class="left text-center">
-          <span aria-hidden="true" class="icon-noun_project_7403"></span>
-          <span class="nome">Cano</span>
-        </a>
-        <a class="left text-center">
-          <span aria-hidden="true" class="icon-noun_project_7230"></span>
-          <span class="nome">Torneira</span>
-        </a>
-        <a class="left text-center">
-          <span aria-hidden="true" class="icon-noun_project_6007"></span>
-          <span class="nome">Tinta</span>
-        </a>
-        <a class="left text-center">
-          <span aria-hidden="true" class="icon-noun_project_4679"></span>
-          <span class="nome">Tomada</span>
-        </a>
-        <a class="left text-center">
-          <span aria-hidden="true" class="icon-noun_project_4679"></span>
-          <span class="nome">Tomada</span>
-        </a>
-        <a class="left text-center">
-          <span aria-hidden="true" class="icon-noun_project_4679"></span>
-          <span class="nome">Tomada</span>
-        </a>
-        <img src="<?php bloginfo('template_url'); ?>/img/divider.png" alt="">
+        
+        <?php  }?>
       </div>
       <div class="large-2 columns busca text-left">
+        <img src="<?php bloginfo('template_url'); ?>/img/divider.png" alt="">
         <input class="search" type="search" placeholder="Buscar" title="Enter para buscar">
       </div>
     </div>
@@ -127,6 +82,35 @@
         </ul>
       </div>
     </div>
+    <ul class="side-menu categorias large-block-grid-3 small-bock-grid-3" id="filters">
+      <a class="close-side-menu">&#215;</a>
+      <li>
+        <a class=" text-center" data-filter="*">
+          <span aria-hidden="true" class="icon-grid"></span>
+          <span class="nome">Todos</span>
+        </a>
+      </li>
+      <?php  
+
+          $args = array(
+          'orderby' => 'name',
+          'parent' => 0,
+          'taxonomy' => 'tipo_produto'
+          );
+          
+          $categories = get_categories( $args );
+          for ($i=0; $i < sizeof($categories); $i++) { 
+          
+        ?>
+          <li>
+            <a  class=" text-center" data-filter=".cano">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/cat_img/<?php  echo $categories[$i]->slug; ?>-branca.png" alt="">
+              <span class="nome"><?php  echo $categories[$i]->name; ?></span>
+            </a>  
+          </li>
+
+      <?php  }?>
+    </ul>
   </section>
 
 <?php get_footer(); ?>

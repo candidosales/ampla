@@ -21,7 +21,7 @@
 
   <link rel="stylesheet/less" href="<?php bloginfo('template_url'); ?>/assets/css/style.less">
 
-  <script src="<?php bloginfo('template_url'); ?>/assets/js/less-1.4.1.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/less-1.5.0.min.js"></script>
 
  <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" />
  <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" />
