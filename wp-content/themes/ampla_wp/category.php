@@ -10,7 +10,7 @@
             <span aria-hidden="true" class="icon-newspaper"></span>
             <span class="roboto-slab">Revista <img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></span>
             <br/>
-            <span>Arquivo da categoria:  <?php echo single_cat_title( '', false ) ?></span>
+            <span class="archive">Arquivo da categoria:  <?php echo single_cat_title( '', false ) ?></span>
         </div>
         <div class="large-7 columns">
           <?php get_search_form();?>
@@ -21,12 +21,13 @@
         <hr class="margem">
         <div class="large-block-grid-4">
           <?php 
-
+                $cat = get_the_category();
                 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                 $args = array(
                   'posts_per_page' => 8,
                   'paged' => $paged,
-                  'post_type' => 'post'
+                  'post_type' => 'post',
+                  'cat' => $cat[0]->cat_ID  
                 );
 
                 query_posts($args);
