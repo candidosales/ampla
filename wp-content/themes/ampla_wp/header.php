@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-BR" > <!--<![endif]-->
+<html class="no-js" lang="pt-BR" > 
 
 <head>
   <meta charset="utf-8" />
+
+  
   <meta name="viewport" content="width=device-width" />
+
+
   <title>Ampla Material de Construção - Teresina e Timon</title>
   <meta name="description" content="Aqui você encontra tudo para material de construção no menor preço e melhor prazo de entrega." />
   <meta name="keywords" content="ampla, material construcao, teresina, piaui"/>

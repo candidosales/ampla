@@ -23,10 +23,10 @@
       </div>
       <div class="large-8 column content-filial">
         <ul class="clearing-thumbs" data-clearing>
-          <li><a href="<?php echo $imagem_2['sizes']['large'] ?>"><img src="<?php echo $imagem_2['sizes']['thumbnail'] ?>" alt=""></a></li>
-          <li><a href="<?php echo $imagem_3['sizes']['large'] ?>"><img src="<?php echo $imagem_3['sizes']['thumbnail'] ?>" alt=""></a></li>
-          <li><a href="<?php echo $imagem_4['sizes']['large'] ?>"><img src="<?php echo $imagem_4['sizes']['thumbnail'] ?>" alt=""></a></li>
-          <li><a href="<?php echo $imagem_5['sizes']['large'] ?>"><img src="<?php echo $imagem_5['sizes']['thumbnail'] ?>" alt=""></a></li>  
+          <li><a href="<?php echo $imagem_2['sizes']['filial-thumb-3'] ?>"><img src="<?php echo $imagem_2['sizes']['thumbnail'] ?>" alt=""></a></li>
+          <li><a href="<?php echo $imagem_3['sizes']['filial-thumb-3'] ?>"><img src="<?php echo $imagem_3['sizes']['thumbnail'] ?>" alt=""></a></li>
+          <li><a href="<?php echo $imagem_4['sizes']['filial-thumb-3'] ?>"><img src="<?php echo $imagem_4['sizes']['thumbnail'] ?>" alt=""></a></li>
+          <li><a href="<?php echo $imagem_5['sizes']['filial-thumb-3'] ?>"><img src="<?php echo $imagem_5['sizes']['thumbnail'] ?>" alt=""></a></li>  
         </ul>
         <ul class="large-block-grid-2">
           <li>

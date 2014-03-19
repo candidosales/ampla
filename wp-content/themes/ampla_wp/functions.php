@@ -20,6 +20,7 @@ if (function_exists('add_theme_support')) {
   	add_image_size( 'filial-thumb', 325, 264, true );
   	add_image_size( 'filial-thumb-1', 100, 100, true );
   	add_image_size( 'filial-thumb-2', 435, 540, true );
+  	add_image_size( 'filial-thumb-3', 1024, 768, true );
   	add_image_size( 'publicidade-thumb', 58, 30, true );
   	add_image_size( 'publicidade-thumb-1', 100, 100, true );
   	add_image_size( 'publicidade-banner-thumb', 912, 172, true );

@@ -16,11 +16,16 @@ function getUrl(){
 }
 
 function altura(){
-  var height = screen.width;
-  var x = 84.5;
+  var height = screen.width,
+      heightMenu = $('.top-bar').height(),
+      heightPartner = $('.rodape').height();
+      //var x = 80;
   
   
-  var altura = ($("body").height()*x)/100;
+  //var altura = ($(window).height()*x)/100;
+  var altura = $(window).height() - (heightMenu+heightPartner);
+  console.log($(window).height());
+  console.log(altura);
   return altura;
 }
 

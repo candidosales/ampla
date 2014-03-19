@@ -29,9 +29,9 @@
 
     <footer class="large-12 columns">
       <div class="large-4 columns">
-        <a href="" title="Facebook"><span aria-hidden="true" class="icon-facebook"></span></a>
-        <a href="" title="Twitter"><span aria-hidden="true" class="icon-twitter"></span></a>
-        <a href="">FALE CONOSCO</a>
+        <a href="https://www.facebook.com/AmplaConstrucao" target="_blank" title="Facebook"><span aria-hidden="true" class="icon-facebook"></span></a>
+        <!--<a href="" title="Twitter"><span aria-hidden="true" class="icon-twitter"></span></a>-->
+        <a href="<?php bloginfo('url'); ?>/clube-do-profissional">FALE CONOSCO</a>
       </div>
       <div class="large-2 columns hide-for-small">
         <!--
@@ -53,16 +53,17 @@
   ga('send', 'pageview');
 
 </script>
-  <!--
-  <script src="<?php bloginfo('template_url'); ?>/js/jquery-1.10.1.min.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/js/jquery-ui.min.js"></script> 
-  <script src="<?php bloginfo('template_url'); ?>/js/foundation.min.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/js/vendor/custom.modernizr.js"></script>
+<!--
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery-1.10.1.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery-ui.min.js"></script> 
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/foundation.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/vendor/custom.modernizr.js"></script>
   
-  <script src="<?php bloginfo('template_url'); ?>/js/enquire.min.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/js/vendor/slimScroll/jquery.slimscroll.min.js"></script> 
-  <script src="<?php bloginfo('template_url'); ?>/js/jquery.isotope.min.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>  -->
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/enquire.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/vendor/slimScroll/jquery.slimscroll.min.js"></script> 
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.isotope.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/script.js"></script>-->  
+  
   <script src="<?php bloginfo('template_url'); ?>/js/ampla.min.js"></script>
   <?php wp_footer(); ?>
 </body>

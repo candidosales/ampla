@@ -1,5 +1,5 @@
-/*! ampla - v1.0.0 - 2013-11-14
-* Copyright (c) 2013 ; Licensed  */
+/*! ampla - v1.0.0 - 2014-03-18
+* Copyright (c) 2014 ; Licensed  */
 /*! jQuery v1.10.1 | (c) 2005, 2013 jQuery Foundation, Inc. | jquery.org/license
 //@ sourceMappingURL=jquery-1.10.1.min.map
 */
@@ -69,11 +69,16 @@ function getUrl(){
 }
 
 function altura(){
-  var height = screen.width;
-  var x = 84.5;
+  var height = screen.width,
+      heightMenu = $('.top-bar').height(),
+      heightPartner = $('.rodape').height();
+      //var x = 80;
   
   
-  var altura = ($("body").height()*x)/100;
+  //var altura = ($(window).height()*x)/100;
+  var altura = $(window).height() - (heightMenu+heightPartner);
+  console.log($(window).height());
+  console.log(altura);
   return altura;
 }
 
